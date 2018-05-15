@@ -6,7 +6,7 @@ MySQL Community Server compressed TAR or ZIP version (http://dev.mysql.com/downl
 
 ## Instructions
 1. Clone the project
-2. Import it as a new Eclipse project (or other IDE)
+2. Import it as an existing Maven project in Eclipse or other IDE
 3. Download MySQL Community Server 
 4. Change variable "MYSQL_PATH" in src/mysqlserver/Utils.java to point to your MySQL Server path
 
