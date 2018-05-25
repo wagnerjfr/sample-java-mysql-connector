@@ -34,7 +34,7 @@ The Application2 program implements an application that:
 
 ## Outputs
 ### Aplication 1
-```
+```console
 [/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqld, --no-defaults, --initialize-insecure, --basedir=/home/wfranchi/MySQL/mysql-8.0.11, --datadir=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp1/data]
 Server instance initialized!
 [/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
@@ -51,7 +51,7 @@ S1 stopped!
 ```
 
 ### Aplication 2
-```
+```console
 [/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqld, --no-defaults, --initialize-insecure, --basedir=/home/wfranchi/MySQL/mysql-8.0.11, --datadir=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp2Master/data]
 Server instance initialized!
 [/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqld, --no-defaults, --initialize-insecure, --basedir=/home/wfranchi/MySQL/mysql-8.0.11, --datadir=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp2Slave/data]
