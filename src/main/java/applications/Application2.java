@@ -80,7 +80,8 @@ public class Application2 {
             commandSlave = connectionSlave.createStatement();
 
             //Set the master (S1) configuration in the slave (S2)
-            commandSlave.execute("CHANGE MASTER TO MASTER_HOST='localhost', MASTER_PORT=" + master_port + ", MASTER_USER='" + username + "';");
+            commandSlave.execute("CHANGE MASTER TO MASTER_HOST='localhost', MASTER_PORT=" + master_port +
+                    ", MASTER_USER='" + username + "';");
 
             //Start replication in the slave (S2)
             commandSlave.execute("START SLAVE;");
@@ -137,7 +138,7 @@ public class Application2 {
         try {
             //Check that the table exists in the slave (S2)
             executeQuery(commandSlave, "DESCRIBE " + USER_TABLE + ";", Kind.SLAVE);
-        }catch(Exception e) {
+        } catch(Exception e) {
             System.err.println(e.getMessage());
         }
 
