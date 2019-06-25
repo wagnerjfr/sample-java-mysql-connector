@@ -10,8 +10,8 @@ MySQL Community Server compressed TAR or ZIP version (http://dev.mysql.com/downl
 3. Download MySQL Community Server 
 4. Change variable "MYSQL_PATH" in src/mysqlserver/Utils.java to point to your MySQL Server path
 
-## Aplications
-### Aplication 1
+## Applications
+### Application 1
 The Application1 program implements an application that:
 - Initialize server instance (let's call it S1)
 - Start S1 in a separate thread
@@ -19,7 +19,7 @@ The Application1 program implements an application that:
 - Fetch the server version by executing "SELECT VERSION()" and print it to stdout
 - Stop S1
 
-### Aplication 2
+### Application 2
 The Application2 program implements an application that:
 - Initialize a server instance (S1)
 - Start S1 in a separate thread as replication master, passing the required additional options
@@ -33,7 +33,7 @@ The Application2 program implements an application that:
 - Stop S2 and S1
 
 ## Outputs
-### Aplication 1
+### Application 1
 ```console
 [/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqld, --no-defaults, --initialize-insecure, --basedir=/home/wfranchi/MySQL/mysql-8.0.11, --datadir=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp1/data]
 Server instance initialized!
@@ -50,7 +50,7 @@ MySQL Version: 8.0.11
 S1 stopped!
 ```
 
-### Aplication 2
+### Application 2
 ```console
 [/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqld, --no-defaults, --initialize-insecure, --basedir=/home/wfranchi/MySQL/mysql-8.0.11, --datadir=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp2Master/data]
 Server instance initialized!
