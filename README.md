@@ -1,5 +1,5 @@
 # Developing Java applications using MySQL Server Community and MySQL Connector/J
-Sample Java applications which show how to use MySQL Server Community (8.0.11) and MySQL Connector/J (8.0.11)
+Sample Java applications which show how to use MySQL Server Community (8.0.11) and MySQL Connector/J (8.0.11) to set up a replication topology (master -> slave)
 
 ## Required software
 MySQL Community Server compressed TAR or ZIP version (http://dev.mysql.com/downloads/mysql/)
@@ -8,7 +8,7 @@ MySQL Community Server compressed TAR or ZIP version (http://dev.mysql.com/downl
 1. Clone the project
 2. Import it as an existing Maven project in Eclipse or other IDE
 3. Download MySQL Community Server 
-4. Change variable `MYSQL_PATH` in src/mysqlserver/Utils.java to point to your MySQL Server path
+4. Change variable `MYSQL_PATH` in `src/mysqlserver/Utils.java` to point to your MySQL Server path
 
 ## Applications
 ### Application 1
