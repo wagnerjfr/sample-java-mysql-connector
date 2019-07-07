@@ -8,15 +8,15 @@ MySQL Community Server compressed TAR or ZIP version (http://dev.mysql.com/downl
 1. Clone the project
 2. Import it as an existing Maven project in Eclipse or other IDE
 3. Download MySQL Community Server 
-4. Change variable "MYSQL_PATH" in src/mysqlserver/Utils.java to point to your MySQL Server path
+4. Change variable `MYSQL_PATH` in src/mysqlserver/Utils.java to point to your MySQL Server path
 
 ## Applications
 ### Application 1
 The Application1 program implements an application that:
 - Initialize server instance (let's call it S1)
 - Start S1 in a separate thread
-- Connect to S1 (Tip: connect to the "mysql" database, the "test" database is no longer provided)
-- Fetch the server version by executing "SELECT VERSION()" and print it to stdout
+- Connect to S1 *(Tip: connect to the "mysql" database, the "test" database is no longer provided)*
+- Fetch the server version by executing `SELECT VERSION()` and print it to stdout
 - Stop S1
 
 ### Application 2
