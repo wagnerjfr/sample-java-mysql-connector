@@ -1,5 +1,5 @@
 # Developing Java applications using MySQL Server Community and MySQL Connector/J
-Sample of Java applications which show how to use MySQL Server Community (8.0.11) and MySQL Connector/J (8.0.11) to set up a replication topology (master ➡ slave)
+Sample of Java applications which show how to use MySQL Server Community (8.0.11) and MySQL Connector/J (8.0.11) to set up a replication topology (master ⭢ slave)
 
 ## Required software
 MySQL Community Server compressed TAR or ZIP version (http://dev.mysql.com/downloads/mysql/)
