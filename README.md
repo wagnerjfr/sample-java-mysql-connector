@@ -35,37 +35,48 @@ The Application2 program implements an application that:
 ## Outputs
 ### Application 1
 ```console
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqld, --no-defaults, --initialize-insecure, --basedir=/home/wfranchi/MySQL/mysql-8.0.11, --datadir=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp1/data]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqld, --no-defaults, --initialize-insecure, --basedir=/home/wfranchi/MySQL/mysql-8.0.20, --datadir=/home/wfranchi/GitHub/sample-java-mysql-connector/bdApp1/data]
 Server instance initialized!
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqld, --no-defaults, --port=3306, --basedir=/home/wfranchi/MySQL/mysql-8.0.11, --datadir=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp1/data, --socket=socket, --log-error=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp1/log.txt]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqld, --no-defaults, --port=3306, --basedir=/home/wfranchi/MySQL/mysql-8.0.20, --datadir=/home/wfranchi/GitHub/sample-java-mysql-connector/bdApp1/data, --socket=socket, --log-error=/home/wfranchi/GitHub/sample-java-mysql-connector/bdApp1/log.txt]
 wait...
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
 wait...
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
+wait...
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
 *****************************
-MySQL Version: 8.0.11
+MySQL Version: 8.0.20
 *****************************
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, shutdown]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, shutdown]
 S1 stopped!
 ```
 
 ### Application 2
 ```console
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqld, --no-defaults, --initialize-insecure, --basedir=/home/wfranchi/MySQL/mysql-8.0.11, --datadir=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp2Master/data]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqld, --no-defaults, --initialize-insecure, --basedir=/home/wfranchi/MySQL/mysql-8.0.20, --datadir=/home/wfranchi/GitHub/sample-java-mysql-connector/bdApp2Master/data]
 Server instance initialized!
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqld, --no-defaults, --initialize-insecure, --basedir=/home/wfranchi/MySQL/mysql-8.0.11, --datadir=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp2Slave/data]
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqld, --no-defaults, --port=3306, --basedir=/home/wfranchi/MySQL/mysql-8.0.11, --datadir=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp2Master/data, --socket=socket, --log-error=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp2Master/log.txt, --server-id=1, --log-bin=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp2Master/mysql-bin]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqld, --no-defaults, --port=3306, --basedir=/home/wfranchi/MySQL/mysql-8.0.20, --datadir=/home/wfranchi/GitHub/sample-java-mysql-connector/bdApp2Master/data, --socket=socket, --log-error=/home/wfranchi/GitHub/sample-java-mysql-connector/bdApp2Master/log.txt, --server-id=1, --log-bin=/home/wfranchi/GitHub/sample-java-mysql-connector/bdApp2Master/mysql-bin]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqld, --no-defaults, --initialize-insecure, --basedir=/home/wfranchi/MySQL/mysql-8.0.20, --datadir=/home/wfranchi/GitHub/sample-java-mysql-connector/bdApp2Slave/data]
 Server instance initialized!
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqld, --no-defaults, --port=3307, --basedir=/home/wfranchi/MySQL/mysql-8.0.11, --datadir=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp2Slave/data, --socket=socket, --log-error=/home/wfranchi/eclipse-oxygen-JEE/workspace/sample-java-mysql-replication/bdApp2Slave/log.txt, --server-id=2]
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3307, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqld, --no-defaults, --port=3307, --basedir=/home/wfranchi/MySQL/mysql-8.0.20, --datadir=/home/wfranchi/GitHub/sample-java-mysql-connector/bdApp2Slave/data, --socket=socket, --log-error=/home/wfranchi/GitHub/sample-java-mysql-connector/bdApp2Slave/log.txt, --server-id=2]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3307, --user=root, ping]
 wait...
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3307, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3307, --user=root, ping]
 wait...
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3307, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3307, --user=root, ping]
+wait...
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3307, --user=root, ping]
+wait...
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3307, --user=root, ping]
+wait...
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, ping]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3307, --user=root, ping]
 
 TEST Replication
 
@@ -74,18 +85,18 @@ Table 'mysql.PERSON' doesn't exist
 [Master]# CREATE TABLE PERSON (ID INT NOT NULL, NAME VARCHAR(20), LASTNAME VARCHAR(20));
 
 [Master]# DESCRIBE PERSON;
-ID int(11) NO
+ID int NO
 NAME varchar(20) YES
 LASTNAME varchar(20) YES
 *****************************
 
 [Slave]# DESCRIBE PERSON;
-ID int(11) NO
+ID int NO
 NAME varchar(20) YES
 LASTNAME varchar(20) YES
 *****************************
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3307, --user=root, shutdown]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3307, --user=root, shutdown]
 S2 stopped!
-[/home/wfranchi/MySQL/mysql-8.0.11/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, shutdown]
+[/home/wfranchi/MySQL/mysql-8.0.20/bin/mysqladmin, --protocol=TCP, --port=3306, --user=root, shutdown]
 S1 stopped!
 ```
